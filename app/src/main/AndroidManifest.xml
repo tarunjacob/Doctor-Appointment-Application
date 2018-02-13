@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mydoctor.code.in.mydoctor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+                   android:label="My Doctor"/>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register" />
+        <activity
+            android:name=".PatientActivity"
+            android:label="Patients Details" />
+        <activity
+            android:name=".DiseaseActivity"
+            android:label="Consultation" />
+        <activity
+            android:name=".AppointmentActivity"
+            android:label="Appointment Details" />
+        <activity
+            android:name=".DoctorActivity"
+            android:label="Doctors Details" />
+        <activity
+            android:name=".ContinueActivity"
+            android:label="Next Appointment" />
+        <activity
+            android:name=".HistoryActivity"
+            android:label="Past Appointments" />
+        <activity
+            android:name=".UploadActivity"
+            android:label="Upload" />
+        <activity
+            android:name=".LoginOptionActivity"
+            android:label="Login Options" />
+        <activity
+            android:name=".RegisterOptionActivity"
+            android:label="Register Options" />
+        <activity
+            android:name=".DoctorLoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".DoctorRegisterActivity"
+            android:label="Register" />
+        <activity
+            android:name=".DoctorAppointmentActivity"
+            android:label="Appointments">
+
+        </activity>
+
+    </application>
+
+</manifest>
